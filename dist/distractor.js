@@ -1,78 +1,50 @@
 var distractor = [
   {
-    "Problem": "15 + 12",
-    "Answer": "27"
+    "Problem": "3 + 4",
+    "Answer": "7"
   },
   {
-    "Problem": "13+ 5",
-    "Answer": "18"
+    "Problem": "1+ 5",
+    "Answer": "6"
   },
   {
-    "Problem": "8 + 8",
-    "Answer": "16"
+    "Problem": "8 + 1",
+    "Answer": "9"
   },
   {
-    "Problem": "23 + 49",
-    "Answer": "72"
+    "Problem": "13 - 8",
+    "Answer": "5"
   },
   {
-    "Problem": "321 + 432",
-    "Answer": "753"
+    "Problem": "45 - 42",
+    "Answer": "3"
   },
   {
-    "Problem": "19 + 7",
-    "Answer": "26"
+    "Problem": "15 - 7",
+    "Answer": "8"
   },
   {
-    "Problem": "23 + 78",
-    "Answer": "101"
+    "Problem": "20 - 18",
+    "Answer": "2"
   },
   {
-    "Problem": "54 + 3",
-    "Answer": "57"
+    "Problem": "2 + 2",
+    "Answer": "4"
   },
   {
-    "Problem": "4 + 10",
-    "Answer": "14"
+    "Problem": "4 - 3",
+    "Answer": "1"
   },
   {
-    "Problem": "16 + 34",
-    "Answer": "50"
+    "Problem": "16 - 9",
+    "Answer": "7"
   },
   {
-    "Problem": "67 + 2",
-    "Answer": "69"
+    "Problem": "7 - 1",
+    "Answer": "6"
   },
   {
-    "Problem": "235 + 354",
-    "Answer": "589"
-  },
-  {
-    "Problem": "18 + 14",
-    "Answer": "32"
-  },
-  {
-    "Problem": "7 + 93",
-    "Answer": "100"
-  },
-  {
-    "Problem": "14 + 68",
-    "Answer": "82"
-  },
-  {
-    "Problem": "78 + 0",
-    "Answer": "78"
-  },
-  {
-    "Problem": "85 + 12",
-    "Answer": "97"
-  },
-  {
-    "Problem": "76 + 48",
-    "Answer": "124"
-  },
-  {
-    "Problem": "22 + 16",
-    "Answer": "38"
+    "Problem": "35 - 35",
+    "Answer": "0"
   }
 ]
