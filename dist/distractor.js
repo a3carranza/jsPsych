@@ -92,7 +92,7 @@ var distractor = [
     "Answer": "3"
   },
   {
-    "Problem": "999-994",
+    "Problem": "999 - 994",
     "Answer": "5"
   }
 ]
