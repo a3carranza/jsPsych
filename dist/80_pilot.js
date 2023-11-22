@@ -476,7 +476,7 @@ var wordpair = [
     "Paired": "BAND - GROUP",
     "Q1": 0,
     "Q2": 1,
-    "Q3": 1,
+    "Q3": 0,
     "Q4": 0
   },
   {
@@ -505,7 +505,7 @@ var wordpair = [
     "Target": "FAMILY",
     "Paired": "BROTHER - FAMILY",
     "Q1": 1,
-    "Q2": 0,
+    "Q2": 1,
     "Q3": 0,
     "Q4": 0
   },
@@ -624,7 +624,7 @@ var wordpair = [
     "Cue": "BOAT",
     "Target": "SKI",
     "Paired": "BOAT - SKI",
-    "Q1": 1,
+    "Q1": 0,
     "Q2": 1,
     "Q3": 1,
     "Q4": 0
