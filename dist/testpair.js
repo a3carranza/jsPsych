@@ -2,6 +2,7 @@ var wordpair = [
   {
     Cue: "ham",
     Target: "odd",
+    Cue_Q: "ham - ?",
     Q_1: "0",
     Q_2: "1",
     Q_3: "1",
@@ -14,6 +15,7 @@ var wordpair = [
     
    Cue: "cat",
     Target: "fry",
+    Cue_Q: "cat - ?",
     Q_1: "1",
     Q_2: "1",
     Q_3: "0",
@@ -26,6 +28,7 @@ var wordpair = [
     
    Cue: "rat",
     Target: "map",
+    Cue_Q: "rat - ?",
     Q_1: "1",
     Q_2: "0",
     Q_3: "0",
@@ -38,6 +41,7 @@ var wordpair = [
     
     Cue: "tad",
     Target: "use",
+    Cue_Q: "tad - ?",
     Q_1: "0",
     Q_2: "0",
     Q_3: "0",
@@ -50,6 +54,7 @@ var wordpair = [
     
     Cue: "lad",
     Target: "oar",
+    Cue_Q: "lad - ?",
     Q_1: "0",
     Q_2: "0",
     Q_3: "0",
@@ -62,6 +67,7 @@ var wordpair = [
    
     Cue: "age",
     Target: "nut",
+    Cue_Q: "age - ?",
     Q_1: "0",
     Q_2: "1",
     Q_3: "0",
@@ -74,6 +80,7 @@ var wordpair = [
     
     Cue: "gel",
     Target: "zap",
+    Cue_Q: "gel - ?",
     Q_1: "0",
     Q_2: "1",
     Q_3: "1",
@@ -86,6 +93,7 @@ var wordpair = [
     
     Cue: "bad",
     Target: "fox",
+    Cue_Q: "bad - ?",
     Q_1: "1",
     Q_2: "0",
     Q_3: "0",
@@ -95,9 +103,9 @@ var wordpair = [
     Paired: "bad - fox"
   },
   {
-    
     Cue: "egg",
     Target: "gas",
+    Cue_Q: "egg - ?",
     Q_1: "0",
     Q_2: "1",
     Q_3: "1",
@@ -110,6 +118,7 @@ var wordpair = [
    
     Cue: "hen",
     Target: "war",
+    Cue_Q: "hen - ?",
     Q_1: "1",
     Q_2: "0",
     Q_3: "0",
