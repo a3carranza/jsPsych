@@ -3,12 +3,10 @@ var wordpair = [
     Cue: "ham",
     Target: "odd",
     Cue_Q: "ham - ?",
-    Q_1: "0",
+    Q_1: "1",
     Q_2: "1",
     Q_3: "1",
     Q_4: "1",
-    Q_5: "1",
-    Q_6: "1",
     Paired: "ham - odd"
   },
   {
@@ -20,8 +18,6 @@ var wordpair = [
     Q_2: "1",
     Q_3: "0",
     Q_4: "1",
-    Q_5: "1",
-    Q_6: "0",
     Paired: "cat - fry"
   },
   {
@@ -33,8 +29,6 @@ var wordpair = [
     Q_2: "0",
     Q_3: "0",
     Q_4: "0",
-    Q_5: "1",
-    Q_6: "0",
     Paired: "rat - map"
   },
   {
@@ -46,8 +40,6 @@ var wordpair = [
     Q_2: "0",
     Q_3: "0",
     Q_4: "0",
-    Q_5: "0",
-    Q_6: "1",
     Paired: "tad - use"
   },
   {
@@ -59,8 +51,6 @@ var wordpair = [
     Q_2: "0",
     Q_3: "0",
     Q_4: "0",
-    Q_5: "1",
-    Q_6: "0",
     Paired: "lad - oar"
   },
   {
@@ -72,8 +62,6 @@ var wordpair = [
     Q_2: "1",
     Q_3: "0",
     Q_4: "1",
-    Q_5: "1",
-    Q_6: "0",
     Paired: "age - nut"
   },
   {
@@ -85,8 +73,6 @@ var wordpair = [
     Q_2: "1",
     Q_3: "1",
     Q_4: "0",
-    Q_5: "1",
-    Q_6: "0",
     Paired: "gel - zap"
   },
   {
@@ -98,8 +84,6 @@ var wordpair = [
     Q_2: "0",
     Q_3: "0",
     Q_4: "0",
-    Q_5: "1",
-    Q_6: "1",
     Paired: "bad - fox"
   },
   {
@@ -110,8 +94,6 @@ var wordpair = [
     Q_2: "1",
     Q_3: "1",
     Q_4: "1",
-    Q_5: "1",
-    Q_6: "0",
     Paired: "egg - gas"
   },
   {
@@ -123,8 +105,6 @@ var wordpair = [
     Q_2: "0",
     Q_3: "0",
     Q_4: "1",
-    Q_5: "1",
-    Q_6: "0",
     Paired: "hen - war"
   }
 ]
