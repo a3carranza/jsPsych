@@ -220,9 +220,10 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
                 response: question_data.join(', '),
             };
         
-            // Finish the trial immediately after submitting the form
-            this.jsPsych.finishTrial(trialdata);
-        });
+            setTimeout(() => {
+                this.jsPsych.finishTrial(trialdata);
+              }, trial.trial_duration); // Finish trial after 6000 milliseconds (6 seconds)
+            });
         
         var startTime = performance.now();
       }
