@@ -77,7 +77,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           trial_duration: { // New parameter for specifying trial duration
             type: jspsych.ParameterType.INT,
             pretty_name: "Trial duration",
-            default: null, // Default duration is 6000 milliseconds (6 seconds)
+            default: 6000, // Default duration is 6000 milliseconds (6 seconds)
         },
       },
   };
@@ -195,39 +195,35 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           display_element.querySelector("#input-" + question_order[0]).focus();
           display_element.querySelector("#jspsych-survey-text-form").addEventListener("submit", (e) => {
             e.preventDefault();
-            // Hide the form when enter is hit!!!!!
-            if (e.key === 'Enter' && trial.trial_duration !== null) {
-                document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
-            } else if (e.key === 'Enter' && trial.trial_duration === null) {
-            // measure response time
+            // Hide the form immediately when submitted
+            document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
+        
+            // Measure response time
             var endTime = performance.now();
             var response_time = Math.round(endTime - startTime);
+        
             // create object to hold responses
             var question_data = [];
             for (var index = 0; index < trial.questions.length; index++) {
                 var q_element = document.querySelector("#jspsych-survey-text-" + index).querySelector("textarea, input");
                 var val = q_element.value.trim(); // Trim any leading or trailing white spaces
-              
+        
                 // Check if the participant provided a non-empty response
                 if (val !== "") {
                     question_data[index] = val;
                 }
             }
+        
             // save data
             var trialdata = {
                 rt: response_time,
                 response: question_data.join(', '),
             };
-            // Do not finish the trial immediately
-            // Continue the trial until a specific event or duration occurs
-            // Optionally, you can add a timeout to finish the trial after a certain duration
-            if (trial.trial_duration !== null) {
-                setTimeout(() => {
-                    this.jsPsych.finishTrial(trialdata);
-                }, trial.trial_duration);}
-            }// Finish trial after set time 
+        
+            // Finish the trial immediately after submitting the form
+            this.jsPsych.finishTrial(trialdata);
         });
-
+        
         var startTime = performance.now();
       }
       simulate(trial, simulation_mode, simulation_options, load_callback) {
