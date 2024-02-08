@@ -198,7 +198,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
             // Hide the form when enter is hit!!!!!
             if (e.key === 'Enter' && trial.trial_duration !== null) {
                 document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
-            } else if (e.key === 'Enter' && trial.trial_duration === null) 
+            } else if (e.key === 'Enter' && trial.trial_duration === null) {
             // measure response time
             var endTime = performance.now();
             var response_time = Math.round(endTime - startTime);
@@ -224,7 +224,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
             if (trial.trial_duration !== null) {
                 setTimeout(() => {
                     this.jsPsych.finishTrial(trialdata);
-                }, trial.trial_duration);
+                }, trial.trial_duration);}
             }// Finish trial after set time 
         });
 
