@@ -77,7 +77,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           trial_duration: { // New parameter for specifying trial duration
             type: jspsych.ParameterType.INT,
             pretty_name: "Trial duration",
-            default: 6000, // Default duration is 6000 milliseconds (6 seconds)
+            default: 1000, // Default duration is 6000 milliseconds (6 seconds)
         },
       },
   };
@@ -195,12 +195,6 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           display_element.querySelector("#input-" + question_order[0]).focus();
           display_element.querySelector("#jspsych-survey-text-form").addEventListener("submit", (e) => {
             e.preventDefault();
-
-            setTimeout(() => {
-                // If the trial is already finished, return
-                if (this.jsPsych.getTrialIndex() === -1) {
-                    return;
-                }
             // Hide the form immediately when submitted
             document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
         
@@ -226,10 +220,9 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
                 response: question_data.join(', '),
             };
         
-              // Finish trial
-        this.jsPsych.finishTrial(trialdata);
-    }, trial.trial_duration);
-
+            setTimeout(() => {
+                this.jsPsych.finishTrial(trialdata);
+            }, trial.trial_duration);
         });
     
         var startTime = performance.now();
