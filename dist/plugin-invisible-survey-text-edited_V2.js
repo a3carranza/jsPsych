@@ -1,5 +1,5 @@
 // edited from js-survey-text; submit botton is invisible and response is just participant answer.
-var jsPsychSurveyTextEdited = (function (jspsych) {
+var jsPsychSurveyTextEditedV2 = (function (jspsych) {
   'use strict';
 
   const info = {
