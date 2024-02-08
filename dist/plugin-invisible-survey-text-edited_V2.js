@@ -222,9 +222,9 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
         
             setTimeout(() => {
                 this.jsPsych.finishTrial(trialdata);
-              }, trial.trial_duration); // Finish trial after 6000 milliseconds (6 seconds)
-            });
-        
+            }, trial.trial_duration);
+        });
+    
         var startTime = performance.now();
       }
       simulate(trial, simulation_mode, simulation_options, load_callback) {
