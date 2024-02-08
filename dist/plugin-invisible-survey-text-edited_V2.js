@@ -235,19 +235,13 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
 
         // Set a timeout to end the trial after the specified duration
         setTimeout(() => {
-            // If the form has not been submitted
-            if (!formSubmitted) {
-                // Hide the form box
-                document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
-
-                // Finish the trial
-                var trialdata = {
-                    rt: null, // Set response time to null or any other appropriate value
-                    response: null, // Set response to null or any other appropriate value
-                };
-                this.jsPsych.finishTrial(trialdata);
-            }
-        }, trial.trial_duration);
+            // Finish the trial
+            var trialdata = {
+                rt: null, // Set response time to null or any other appropriate value
+                response: null, // Set response to null or any other appropriate value
+            };
+            this.jsPsych.finishTrial(trialdata);
+        }, formSubmitted ? 0 : trial.trial_duration);
     }
       simulate(trial, simulation_mode, simulation_options, load_callback) {
           if (simulation_mode == "data-only") {
