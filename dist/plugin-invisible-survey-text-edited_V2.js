@@ -179,6 +179,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           }
           // add submit button
           html +=
+          //this code here makes the submit button invisible 
               '<input type="submit" id="jspsych-survey-text-next" class="jspsych-btn jspsych-survey-text" style="visibility:hidden;" value="' +
                   trial.button_label +
                   '"></input>';
@@ -188,6 +189,8 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           display_element.querySelector("#input-" + question_order[0]).focus();
           display_element.querySelector("#jspsych-survey-text-form").addEventListener("submit", (e) => {
             e.preventDefault();
+            // Hide the form when ebnter is hit!!!!!
+        document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
             // measure response time
             var endTime = performance.now();
             var response_time = Math.round(endTime - startTime);
