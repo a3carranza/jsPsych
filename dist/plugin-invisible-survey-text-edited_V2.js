@@ -94,6 +94,8 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           this.jsPsych = jsPsych;
       }
       trial(display_element, trial) {
+        //setup form flag
+        var formSubmitted = false;
           for (var i = 0; i < trial.questions.length; i++) {
               if (typeof trial.questions[i].rows == "undefined") {
                   trial.questions[i].rows = 1;
@@ -193,9 +195,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           display_element.innerHTML = html;
           // backup in case autofocus doesn't work
           display_element.querySelector("#input-" + question_order[0]).focus();
-          
-          //setup flag to see if form is submitted 
-          var formSubmitted = false;
+        
          
           display_element.querySelector("#jspsych-survey-text-form").addEventListener("submit", (e) => {
             e.preventDefault();
