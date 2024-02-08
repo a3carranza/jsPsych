@@ -47,6 +47,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
                       pretty_name: "Question Name",
                       default: "",
                   },
+                  
               },
           },
           /** If true, the order of the questions in the 'questions' array will be randomized. */
@@ -73,6 +74,11 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
               pretty_name: "Allow autocomplete",
               default: false,
           },
+          trial_duration: { // New parameter for specifying trial duration
+            type: jspsych.ParameterType.INT,
+            pretty_name: "Trial duration",
+            default: null, // Default duration is 6000 milliseconds (6 seconds)
+        },
       },
   };
   /**
@@ -190,7 +196,9 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           display_element.querySelector("#jspsych-survey-text-form").addEventListener("submit", (e) => {
             e.preventDefault();
             // Hide the form when ebnter is hit!!!!!
-        document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
+            if (trial.trial_duration === null) {
+                document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
+            }
             // measure response time
             var endTime = performance.now();
             var response_time = Math.round(endTime - startTime);
@@ -213,9 +221,11 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
             // Do not finish the trial immediately
             // Continue the trial until a specific event or duration occurs
             // Optionally, you can add a timeout to finish the trial after a certain duration
-            setTimeout(() => {
-               this.jsPsych.finishTrial(trialdata);
-            }, 6000); // Finish trial after 3000 milliseconds (3 seconds)
+            if (trial.trial_duration !== null) {
+                setTimeout(() => {
+                    this.jsPsych.finishTrial(trialdata);
+                }, trial.trial_duration);
+            }// Finish trial after set time 
         });
 
         var startTime = performance.now();
