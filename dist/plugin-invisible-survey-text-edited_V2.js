@@ -195,10 +195,10 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           display_element.querySelector("#input-" + question_order[0]).focus();
           display_element.querySelector("#jspsych-survey-text-form").addEventListener("submit", (e) => {
             e.preventDefault();
-            // Hide the form when ebnter is hit!!!!!
-            if (trial.trial_duration === null) {
+            // Hide the form when enter is hit!!!!!
+            if (e.key === 'Enter' && trial.trial_duration !== null) {
                 document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
-            }
+            } else if (e.key === 'Enter' && trial.trial_duration === null) 
             // measure response time
             var endTime = performance.now();
             var response_time = Math.round(endTime - startTime);
