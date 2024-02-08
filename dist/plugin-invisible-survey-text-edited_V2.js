@@ -193,11 +193,17 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           display_element.innerHTML = html;
           // backup in case autofocus doesn't work
           display_element.querySelector("#input-" + question_order[0]).focus();
+          
+          //setup flag to see if form is submitted 
+          var formSubmitted = false;
+         
           display_element.querySelector("#jspsych-survey-text-form").addEventListener("submit", (e) => {
             e.preventDefault();
+
             // Hide the form immediately when submitted
             document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
-        
+          //change flag
+            formSubmitted = true;
             // Measure response time
             var endTime = performance.now();
             var response_time = Math.round(endTime - startTime);
@@ -224,9 +230,25 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
                 this.jsPsych.finishTrial(trialdata);
             }, trial.trial_duration);
         });
-    
+
         var startTime = performance.now();
-      }
+
+        // Set a timeout to end the trial after the specified duration
+        setTimeout(() => {
+            // If the form has not been submitted
+            if (!formSubmitted) {
+                // Hide the form box
+                document.querySelector("#jspsych-survey-text-form").style.visibility = "hidden";
+
+                // Finish the trial
+                var trialdata = {
+                    rt: null, // Set response time to null or any other appropriate value
+                    response: null, // Set response to null or any other appropriate value
+                };
+                this.jsPsych.finishTrial(trialdata);
+            }
+        }, trial.trial_duration);
+    }
       simulate(trial, simulation_mode, simulation_options, load_callback) {
           if (simulation_mode == "data-only") {
               load_callback();
