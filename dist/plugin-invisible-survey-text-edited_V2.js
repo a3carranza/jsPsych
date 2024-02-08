@@ -77,7 +77,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
           trial_duration: { // New parameter for specifying trial duration
             type: jspsych.ParameterType.INT,
             pretty_name: "Trial duration",
-            default: 1000, // Default duration is 6000 milliseconds (6 seconds)
+            default: 6000, // Default duration is 6000 milliseconds (6 seconds)
         },
       },
   };
@@ -229,7 +229,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
               // Finish trial
         this.jsPsych.finishTrial(trialdata);
     }, trial.trial_duration);
-    
+
         });
     
         var startTime = performance.now();
