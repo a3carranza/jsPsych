@@ -198,49 +198,38 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
         
          
           // Remove the submit event listener
-display_element.querySelector("#jspsych-survey-text-form").removeEventListener("submit");
+          display_element.querySelector("#jspsych-survey-text-form").removeEventListener("submit");
 
-// Change flag
-formSubmitted = true;
-
-// Measure response time
-var endTime = performance.now();
-var response_time = Math.round(endTime - startTime);
-
-// Create object to hold responses
-var question_data = [];
-for (var index = 0; index < trial.questions.length; index++) {
-    var q_element = document.querySelector("#jspsych-survey-text-" + index).querySelector("textarea, input");
-    var val = q_element.value.trim(); // Trim any leading or trailing white spaces
-
-    // Check if the participant provided a non-empty response
-    if (val !== "") {
-        question_data[index] = val;
-    }
-}
-
-// Save data
-var trialdata = {
-    rt: response_time,
-    response: question_data.join(', '),
-};
-
-// Submit the form after the specified duration
-setTimeout(() => {
-    jsPsych.finishTrial(trialdata);
-}, trial.trial_duration);
-
-        var startTime = performance.now();
-
-        // Set a timeout to end the trial after the specified duration
-        setTimeout(() => {
-            // Finish the trial
-            var trialdata = {
-                rt: null, // Set response time to null or any other appropriate value
-                response: null, // Set response to null or any other appropriate value
-            };
-            this.jsPsych.finishTrial(trialdata);
-        }, formSubmitted ? 0 : trial.trial_duration);
+          // Measure start time
+          var startTime = performance.now();
+          
+          // Set a timeout to end the trial after the specified duration
+          setTimeout(() => {
+              // Measure response time
+              var endTime = performance.now();
+              var response_time = Math.round(endTime - startTime);
+          
+              // Create object to hold responses
+              var question_data = [];
+              for (var index = 0; index < trial.questions.length; index++) {
+                  var q_element = document.querySelector("#jspsych-survey-text-" + index).querySelector("textarea, input");
+                  var val = q_element.value.trim(); // Trim any leading or trailing white spaces
+          
+                  // Check if the participant provided a non-empty response
+                  if (val !== "") {
+                      question_data[index] = val;
+                  }
+              }
+          
+              // Save data
+              var trialdata = {
+                  rt: response_time,
+                  response: question_data.join(', '),
+              };
+          
+              // Submit the trial data
+              jsPsych.finishTrial(trialdata);
+          }, trial.trial_duration);
     }
       simulate(trial, simulation_mode, simulation_options, load_callback) {
           if (simulation_mode == "data-only") {
