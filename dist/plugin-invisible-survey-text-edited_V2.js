@@ -183,8 +183,8 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
             display_element.querySelector("#jspsych-survey-text-form").addEventListener("submit", (e) => {
                 e.preventDefault();
 
-                // Set timeout for trial duration
-                var startTime = performance.now(); // Define startTime here
+                
+                // Define startTime here
                 setTimeout(() => {
                     // measure response time
                     var endTime = performance.now();
@@ -210,6 +210,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
                     this.jsPsych.finishTrial(trialdata);
                 }, trial.trial_duration);
             });
+            var startTime = performance.now(); // Set timeout for trial duration
         }
         simulate(trial, simulation_mode, simulation_options, load_callback) {
             if (simulation_mode == "data-only") {
