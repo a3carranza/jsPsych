@@ -1,4 +1,4 @@
-var jsPsychSurveyTextEdited = (function (jspsych) {
+var jsPsychSurveyTextEditedV2 = (function (jspsych) {
     'use strict';
   
     const info = {
