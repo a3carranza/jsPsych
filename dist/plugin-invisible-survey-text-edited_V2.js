@@ -106,13 +106,14 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
             if (trial.preamble !== null) {
                 html +=
                     '<div id="jspsych-survey-text-preamble" class="jspsych-survey-text-preamble">' +
-                    trial.preamble +
-                    "</div>";
+                        trial.preamble +
+                        "</div>";
             }
             // start form
             if (trial.autocomplete) {
                 html += '<form id="jspsych-survey-text-form">';
-            } else {
+            }
+            else {
                 html += '<form id="jspsych-survey-text-form" autocomplete="off">';
             }
             // generate question order
@@ -129,93 +130,89 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
                 var question_index = question_order[i];
                 html +=
                     '<div id="jspsych-survey-text-' +
-                    question_index +
-                    '" class="jspsych-survey-text-question" style="margin: 2em 0em;">';
+                        question_index +
+                        '" class="jspsych-survey-text-question" style="margin: 2em 0em;">';
                 html += '<p class="jspsych-survey-text">' + question.prompt + "</p>";
                 var autofocus = i == 0 ? "autofocus" : "";
                 var req = question.required ? "required" : "";
                 if (question.rows == 1) {
                     html +=
                         '<input type="text" id="input-' +
-                        question_index +
-                        '"  name="#jspsych-survey-text-response-' +
-                        question_index +
-                        '" data-name="' +
-                        question.name +
-                        '" size="' +
-                        question.columns +
-                        '" ' +
-                        autofocus +
-                        " " +
-                        req +
-                        ' placeholder="' +
-                        question.placeholder +
-                        '"></input>';
-                } else {
+                            question_index +
+                            '"  name="#jspsych-survey-text-response-' +
+                            question_index +
+                            '" data-name="' +
+                            question.name +
+                            '" size="' +
+                            question.columns +
+                            '" ' +
+                            autofocus +
+                            " " +
+                            req +
+                            ' placeholder="' +
+                            question.placeholder +
+                            '"></input>';
+                }
+                else {
                     html +=
                         '<textarea id="input-' +
-                        question_index +
-                        '" name="#jspsych-survey-text-response-' +
-                        question_index +
-                        '" data-name="' +
-                        question.name +
-                        '" cols="' +
-                        question.columns +
-                        '" rows="' +
-                        question.rows +
-                        '" ' +
-                        autofocus +
-                        " " +
-                        req +
-                        ' placeholder="' +
-                        question.placeholder +
-                        '"></textarea>';
+                            question_index +
+                            '" name="#jspsych-survey-text-response-' +
+                            question_index +
+                            '" data-name="' +
+                            question.name +
+                            '" cols="' +
+                            question.columns +
+                            '" rows="' +
+                            question.rows +
+                            '" ' +
+                            autofocus +
+                            " " +
+                            req +
+                            ' placeholder="' +
+                            question.placeholder +
+                            '"></textarea>';
                 }
                 html += "</div>";
             }
             html += "</form>";
             display_element.innerHTML = html;
-    
             // backup in case autofocus doesn't work
             display_element.querySelector("#input-" + question_order[0]).focus();
-    
-            display_element.querySelector("#jspsych-survey-text-form").addEventListener("submit", (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-    
-                // Define startTime here
-                setTimeout(() => {
-                    // measure response time
-                    var endTime = performance.now();
-                    var response_time = Math.round(endTime - startTime);
-                    // create object to hold responses
-                    var question_data = [];
-                    for (var index = 0; index < trial.questions.length; index++) {
-                        var q_element = document.querySelector("#jspsych-survey-text-" + index).querySelector("textarea, input");
-                        var val = q_element.value.trim(); // Trim any leading or trailing white spaces
-    
-                        // Check if the participant provided a non-empty response
-                        if (val !== "") {
-                            question_data[index] = val;
-                        }
-                    }
-                    // save data
-                    var trialdata = {
-                        rt: response_time,
-                        response: question_data.join(', '),
-                    };
-                    display_element.innerHTML = "";
-                    // next trial
-                    this.jsPsych.finishTrial(trialdata);
-                }, trial.trial_duration);
-                if (trial.trial_duration !== null) {
-                    jsPsych.pluginAPI.setTimeout(() => {
-                        // Automatically submit the form and end the trial
-                        display_element.querySelector('#jspsych-survey-text-form').requestSubmit();
-                    }, trial.trial_duration);
+
+            // Set timeout for trial duration
+            setTimeout(() => {
+                // measure response time
+                var endTime = performance.now();
+                var response_time = Math.round(endTime - startTime);
+                // create object to hold responses
+                var question_data = [];
+                for (var index = 0; index < trial.questions.length; index++) {
+                  var q_element = document.querySelector("#jspsych-survey-text-" + index).querySelector("textarea, input");
+                  var val = q_element.value.trim(); // Trim any leading or trailing white spaces
+                
+                  // Check if the participant provided a non-empty response
+                  if (val !== "") {
+                    question_data[index] = val;
+                  }
+                }
+                // save data
+                var trialdata = {
+                    rt: response_time,
+                    response: question_data.join(', '),
+                };
+                display_element.innerHTML = "";
+                // next trial
+                this.jsPsych.finishTrial(trialdata);
+            }, trial.trial_duration);
+
+            var startTime = performance.now();
+            display_element.querySelector("#jspsych-survey-text-form").addEventListener("keydown", (e) => {
+                // Check if the pressed key is "enter"
+                if (e.key === "Enter") {
+                    e.preventDefault(); // Prevent default "enter" behavior
                 }
             });
-            var startTime = performance.now(); // Set timeout for trial duration
         }
         simulate(trial, simulation_mode, simulation_options, load_callback) {
             if (simulation_mode == "data-only") {
@@ -267,7 +264,7 @@ var jsPsychSurveyTextEditedV2 = (function (jspsych) {
         }
     }
     SurveyTextPlugin.info = info;
-    
+  
     return SurveyTextPlugin;
-    })(jsPsychModule);
-    
+  
+})(jsPsychModule);
