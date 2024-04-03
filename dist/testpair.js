@@ -7,7 +7,8 @@ var wordpair = [
     Q_2: "1",
     Q_3: "1",
     Q_4: "1",
-    Paired: "ham - odd"
+    Paired: "ham - odd",
+    MECH: "ham odd"
   },
   {
     
@@ -18,7 +19,8 @@ var wordpair = [
     Q_2: "1",
     Q_3: "0",
     Q_4: "1",
-    Paired: "cat - fry"
+    Paired: "cat - fry",
+    MECH: "cat fry"
   },
   {
     
@@ -29,7 +31,8 @@ var wordpair = [
     Q_2: "0",
     Q_3: "0",
     Q_4: "0",
-    Paired: "rat - map"
+    Paired: "rat - map",
+    MECH: "rat map"
   },
   {
     
@@ -40,7 +43,8 @@ var wordpair = [
     Q_2: "0",
     Q_3: "0",
     Q_4: "0",
-    Paired: "tad - use"
+    Paired: "tad - use",
+    MECH: "tad use"
   },
   {
     
@@ -51,7 +55,8 @@ var wordpair = [
     Q_2: "0",
     Q_3: "0",
     Q_4: "0",
-    Paired: "lad - oar"
+    Paired: "lad - oar",
+    MECH: "lad oar"
   },
   {
    
@@ -62,7 +67,8 @@ var wordpair = [
     Q_2: "1",
     Q_3: "0",
     Q_4: "1",
-    Paired: "age - nut"
+    Paired: "age - nut",
+    MECH: "age nut"
   },
   {
     
@@ -73,7 +79,8 @@ var wordpair = [
     Q_2: "1",
     Q_3: "1",
     Q_4: "0",
-    Paired: "gel - zap"
+    Paired: "gel - zap",
+    MECH: "gel zap"
   },
   {
     
@@ -84,7 +91,8 @@ var wordpair = [
     Q_2: "0",
     Q_3: "0",
     Q_4: "0",
-    Paired: "bad - fox"
+    Paired: "bad - fox",
+    MECH: "bad fox"
   },
   {
     Cue: "egg",
@@ -94,7 +102,8 @@ var wordpair = [
     Q_2: "1",
     Q_3: "1",
     Q_4: "1",
-    Paired: "egg - gas"
+    Paired: "egg - gas",
+    MECH: "egg gas"
   },
   {
    
@@ -105,6 +114,7 @@ var wordpair = [
     Q_2: "0",
     Q_3: "0",
     Q_4: "1",
-    Paired: "hen - war"
+    Paired: "hen - war",
+    MECH: "hen war"
   }
 ]
