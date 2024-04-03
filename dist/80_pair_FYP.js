@@ -1,4 +1,4 @@
-var wordpair = [
+var wordpair =[
   {
     "X": 1,
     "Cue": "MUD",
@@ -8,7 +8,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 1,
-    "CUE_Q": "MUD - ?"
+    "CUE_Q": "MUD - ?",
+    "MECH": "MUD PIG"
   },
   {
     "X": 2,
@@ -19,7 +20,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "AVENUE - ?"
+    "CUE_Q": "AVENUE - ?",
+    "MECH": "AVENUE PARK"
   },
   {
     "X": 3,
@@ -30,7 +32,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "WINE - ?"
+    "CUE_Q": "WINE - ?",
+    "MECH": "WINE CHEESE"
   },
   {
     "X": 4,
@@ -41,7 +44,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "METAL - ?"
+    "CUE_Q": "METAL - ?",
+    "MECH": "METAL GOLD"
   },
   {
     "X": 5,
@@ -52,7 +56,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 1,
-    "CUE_Q": "GREEN - ?"
+    "CUE_Q": "GREEN - ?",
+    "MECH": "GREEN APPLE"
   },
   {
     "X": 6,
@@ -63,7 +68,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "PAPER - ?"
+    "CUE_Q": "PAPER - ?",
+    "MECH": "PAPER WOOD"
   },
   {
     "X": 7,
@@ -74,7 +80,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 1,
-    "CUE_Q": "SMELL - ?"
+    "CUE_Q": "SMELL - ?",
+    "MECH": "SMELL FISH"
   },
   {
     "X": 8,
@@ -85,7 +92,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "HOLE - ?"
+    "CUE_Q": "HOLE - ?",
+    "MECH": "HOLE CIRCLE"
   },
   {
     "X": 9,
@@ -96,7 +104,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "LADY - ?"
+    "CUE_Q": "LADY - ?",
+    "MECH": "LADY BUG"
   },
   {
     "X": 10,
@@ -107,7 +116,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "TRAIL - ?"
+    "CUE_Q": "TRAIL - ?",
+    "MECH": "TRAIL BLAZE"
   },
   {
     "X": 11,
@@ -118,7 +128,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "HALL - ?"
+    "CUE_Q": "HALL - ?",
+    "MECH": "HALL DOOR"
   },
   {
     "X": 12,
@@ -129,7 +140,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "LIQUOR - ?"
+    "CUE_Q": "LIQUOR - ?",
+    "MECH": "LIQUOR SCOTCH"
   },
   {
     "X": 13,
@@ -140,7 +152,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "ARMY - ?"
+    "CUE_Q": "ARMY - ?",
+    "MECH": "ARMY MARINE"
   },
   {
     "X": 14,
@@ -151,7 +164,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 1,
-    "CUE_Q": "MUSCLE - ?"
+    "CUE_Q": "MUSCLE - ?",
+    "MECH": "MUSCLE BONE"
   },
   {
     "X": 15,
@@ -162,7 +176,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "ANGLE - ?"
+    "CUE_Q": "ANGLE - ?",
+    "MECH": "ANGLE CURVE"
   },
   {
     "X": 16,
@@ -173,7 +188,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "SUIT - ?"
+    "CUE_Q": "SUIT - ?",
+    "MECH": "SUIT JACKET"
   },
   {
     "X": 17,
@@ -184,7 +200,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "LIGHT - ?"
+    "CUE_Q": "LIGHT - ?",
+    "MECH": "LIGHT DAY"
   },
   {
     "X": 18,
@@ -195,7 +212,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "SUPPER - ?"
+    "CUE_Q": "SUPPER - ?",
+    "MECH": "SUPPER LUNCH"
   },
   {
     "X": 19,
@@ -206,7 +224,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "STUDY - ?"
+    "CUE_Q": "STUDY - ?",
+    "MECH": "STUDY DESK"
   },
   {
     "X": 20,
@@ -217,7 +236,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 1,
-    "CUE_Q": "BLOOD - ?"
+    "CUE_Q": "BLOOD - ?",
+    "MECH": "BLOOD HOUND"
   },
   {
     "X": 21,
@@ -228,7 +248,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "POWDER - ?"
+    "CUE_Q": "POWDER - ?",
+    "MECH": "POWDER FLOUR"
   },
   {
     "X": 22,
@@ -239,7 +260,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "HAND - ?"
+    "CUE_Q": "HAND - ?",
+    "MECH": "HAND WASH"
   },
   {
     "X": 23,
@@ -250,7 +272,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "HEART - ?"
+    "CUE_Q": "HEART - ?",
+    "MECH": "HEART CHEST"
   },
   {
     "X": 24,
@@ -261,7 +284,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "SOUND - ?"
+    "CUE_Q": "SOUND - ?",
+    "MECH": "SOUND WAVE"
   },
   {
     "X": 25,
@@ -272,7 +296,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "LETTERS - ?"
+    "CUE_Q": "LETTERS - ?",
+    "MECH": "LETTERS NOTES"
   },
   {
     "X": 26,
@@ -283,7 +308,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "BLUE - ?"
+    "CUE_Q": "BLUE - ?",
+    "MECH": "BLUE INK"
   },
   {
     "X": 27,
@@ -294,7 +320,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "GROUND - ?"
+    "CUE_Q": "GROUND - ?",
+    "MECH": "GROUND SKY"
   },
   {
     "X": 28,
@@ -305,7 +332,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "BRIGHT - ?"
+    "CUE_Q": "BRIGHT - ?",
+    "MECH": "BRIGHT YELLOW"
   },
   {
     "X": 29,
@@ -316,7 +344,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "POCKET - ?"
+    "CUE_Q": "POCKET - ?",
+    "MECH": "POCKET KNIFE"
   },
   {
     "X": 30,
@@ -327,7 +356,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 0,
-    "CUE_Q": "BAR - ?"
+    "CUE_Q": "BAR - ?",
+    "MECH": "BAR DRUNK"
   },
   {
     "X": 31,
@@ -338,7 +368,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 1,
-    "CUE_Q": "WINDOW - ?"
+    "CUE_Q": "WINDOW - ?",
+    "MECH": "WINDOW FRAME"
   },
   {
     "X": 32,
@@ -349,7 +380,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "SPEAKER - ?"
+    "CUE_Q": "SPEAKER - ?",
+    "MECH": "SPEAKER GUEST"
   },
   {
     "X": 33,
@@ -360,7 +392,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "SPRING - ?"
+    "CUE_Q": "SPRING - ?",
+    "MECH": "SPRING WINTER"
   },
   {
     "X": 34,
@@ -371,7 +404,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 1,
     "Q4": 0,
-    "CUE_Q": "BIRD - ?"
+    "CUE_Q": "BIRD - ?",
+    "MECH": "BIRD ANIMAL"
   },
   {
     "X": 35,
@@ -382,7 +416,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "BREATH - ?"
+    "CUE_Q": "BREATH - ?",
+    "MECH": "BREATH OXYGEN"
   },
   {
     "X": 36,
@@ -393,7 +428,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "TOOL - ?"
+    "CUE_Q": "TOOL - ?",
+    "MECH": "TOOL SHOVEL"
   },
   {
     "X": 37,
@@ -404,7 +440,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "STREET - ?"
+    "CUE_Q": "STREET - ?",
+    "MECH": "STREET BLOCK"
   },
   {
     "X": 38,
@@ -415,7 +452,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "BALL - ?"
+    "CUE_Q": "BALL - ?",
+    "MECH": "BALL DANCE"
   },
   {
     "X": 39,
@@ -426,7 +464,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "GENERAL - ?"
+    "CUE_Q": "GENERAL - ?",
+    "MECH": "GENERAL STORE"
   },
   {
     "X": 40,
@@ -437,7 +476,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "SPEAK - ?"
+    "CUE_Q": "SPEAK - ?",
+    "MECH": "SPEAK LISTEN"
   },
   {
     "X": 41,
@@ -448,7 +488,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 1,
-    "CUE_Q": "MACHINE - ?"
+    "CUE_Q": "MACHINE - ?",
+    "MECH": "MACHINE ENGINE"
   },
   {
     "X": 42,
@@ -459,7 +500,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "BEER - ?"
+    "CUE_Q": "BEER - ?",
+    "MECH": "BEER FOAM"
   },
   {
     "X": 43,
@@ -470,7 +512,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "GRAVE - ?"
+    "CUE_Q": "GRAVE - ?",
+    "MECH": "GRAVE COFFIN"
   },
   {
     "X": 44,
@@ -481,7 +524,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "BABY - ?"
+    "CUE_Q": "BABY - ?",
+    "MECH": "BABY BOTTLE"
   },
   {
     "X": 45,
@@ -492,7 +536,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "TALK - ?"
+    "CUE_Q": "TALK - ?",
+    "MECH": "TALK SING"
   },
   {
     "X": 46,
@@ -503,7 +548,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "BRAIN - ?"
+    "CUE_Q": "BRAIN - ?",
+    "MECH": "BRAIN CELL"
   },
   {
     "X": 47,
@@ -514,7 +560,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "GIFT - ?"
+    "CUE_Q": "GIFT - ?",
+    "MECH": "GIFT BOX"
   },
   {
     "X": 48,
@@ -525,7 +572,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 0,
-    "CUE_Q": "BAND - ?"
+    "CUE_Q": "BAND - ?",
+    "MECH": "BAND GROUP"
   },
   {
     "X": 49,
@@ -536,7 +584,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "PRISON - ?"
+    "CUE_Q": "PRISON - ?",
+    "MECH": "PRISON GUARD"
   },
   {
     "X": 50,
@@ -547,7 +596,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "BEAR - ?"
+    "CUE_Q": "BEAR - ?",
+    "MECH": "BEAR CAVE"
   },
   {
     "X": 51,
@@ -558,7 +608,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "BROTHER - ?"
+    "CUE_Q": "BROTHER - ?",
+    "MECH": "BROTHER FAMILY"
   },
   {
     "X": 52,
@@ -569,7 +620,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "SUN - ?"
+    "CUE_Q": "SUN - ?",
+    "MECH": "SUN HEAT"
   },
   {
     "X": 53,
@@ -580,7 +632,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "BLIND - ?"
+    "CUE_Q": "BLIND - ?",
+    "MECH": "BLIND VISION"
   },
   {
     "X": 54,
@@ -591,7 +644,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "SITE - ?"
+    "CUE_Q": "SITE - ?",
+    "MECH": "SITE CAMP"
   },
   {
     "X": 55,
@@ -602,7 +656,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "AGE - ?"
+    "CUE_Q": "AGE - ?",
+    "MECH": "AGE WEIGHT"
   },
   {
     "X": 56,
@@ -613,7 +668,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "PAINT - ?"
+    "CUE_Q": "PAINT - ?",
+    "MECH": "PAINT HOUSE"
   },
   {
     "X": 57,
@@ -624,7 +680,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "ARM - ?"
+    "CUE_Q": "ARM - ?",
+    "MECH": "ARM CHAIR"
   },
   {
     "X": 58,
@@ -635,7 +692,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "STREAM - ?"
+    "CUE_Q": "STREAM - ?",
+    "MECH": "STREAM LAKE"
   },
   {
     "X": 59,
@@ -646,7 +704,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "MORNING - ?"
+    "CUE_Q": "MORNING - ?",
+    "MECH": "MORNING COFFEE"
   },
   {
     "X": 60,
@@ -657,7 +716,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "MEAT - ?"
+    "CUE_Q": "MEAT - ?",
+    "MECH": "MEAT LOAF"
   },
   {
     "X": 61,
@@ -668,7 +728,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "LANE - ?"
+    "CUE_Q": "LANE - ?",
+    "MECH": "LANE ALLEY"
   },
   {
     "X": 62,
@@ -679,7 +740,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 0,
-    "CUE_Q": "VEHICLE - ?"
+    "CUE_Q": "VEHICLE - ?",
+    "MECH": "VEHICLE TRUCK"
   },
   {
     "X": 63,
@@ -690,7 +752,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 0,
-    "CUE_Q": "BOAT - ?"
+    "CUE_Q": "BOAT - ?",
+    "MECH": "BOAT  SKI"
   },
   {
     "X": 64,
@@ -701,7 +764,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "HIT - ?"
+    "CUE_Q": "HIT - ?",
+    "MECH": "HIT FIGHT"
   },
   {
     "X": 65,
@@ -712,7 +776,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "MANAGER - ?"
+    "CUE_Q": "MANAGER - ?",
+    "MECH": "MANAGER OWNER"
   },
   {
     "X": 66,
@@ -723,7 +788,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "BEACH - ?"
+    "CUE_Q": "BEACH - ?",
+    "MECH": "BEACH TOWEL"
   },
   {
     "X": 67,
@@ -734,7 +800,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "GATE - ?"
+    "CUE_Q": "GATE - ?",
+    "MECH": "GATE LATCH"
   },
   {
     "X": 68,
@@ -745,7 +812,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "BLANKET - ?"
+    "CUE_Q": "BLANKET - ?",
+    "MECH": "BLANKET PILLOW"
   },
   {
     "X": 69,
@@ -756,7 +824,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "PRINCE - ?"
+    "CUE_Q": "PRINCE - ?",
+    "MECH": "PRINCE CASTLE"
   },
   {
     "X": 70,
@@ -767,7 +836,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 1,
     "Q4": 1,
-    "CUE_Q": "BEEF - ?"
+    "CUE_Q": "BEEF - ?",
+    "MECH": "BEEF CATTLE"
   },
   {
     "X": 71,
@@ -778,7 +848,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "MAIL - ?"
+    "CUE_Q": "MAIL - ?",
+    "MECH": "MAIL JUNK"
   },
   {
     "X": 72,
@@ -789,7 +860,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "LAWYER - ?"
+    "CUE_Q": "LAWYER - ?",
+    "MECH": "LAWYER CASE"
   },
   {
     "X": 73,
@@ -800,7 +872,8 @@ var wordpair = [
     "Q2": 1,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "TEN - ?"
+    "CUE_Q": "TEN - ?",
+    "MECH": "TEN DIME"
   },
   {
     "X": 74,
@@ -811,7 +884,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "HIGHWAY - ?"
+    "CUE_Q": "HIGHWAY - ?",
+    "MECH": "HIGHWAY LANE"
   },
   {
     "X": 75,
@@ -822,7 +896,8 @@ var wordpair = [
     "Q2": 0,
     "Q3": 0,
     "Q4": 0,
-    "CUE_Q": "MUSIC - ?"
+    "CUE_Q": "MUSIC - ?",
+    "MECH": "MUSIC NOISE"
   },
   {
     "X": 76,
@@ -833,6 +908,7 @@ var wordpair = [
     "Q2": 0,
     "Q3": 1,
     "Q4": 0,
-    "CUE_Q": "PLAY - ?"
+    "CUE_Q": "PLAY - ?",
+    "MECH": "PLAY KID"
   }
 ]
